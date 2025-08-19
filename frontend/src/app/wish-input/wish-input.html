@@ -1,0 +1,7 @@
+<div class="wish-input">
+    <form #f="ngForm" class="wish-form" (ngSubmit)="submitWish()">
+      <input type="text" name="wishinput" [(ngModel)]="wish" placeholder="Enter your wish..." required minlength="3" />
+      <button class="submit-button" >Submit</button>
+    </form>
+    
+  </div>

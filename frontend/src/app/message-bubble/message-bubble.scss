@@ -1,0 +1,36 @@
+.message-bubble {
+  max-width: 80%;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+  animation: fadeIn 0.3s ease-in-out;
+  text-align: center;          // center lines
+  justify-content: center;     // if using flex
+  align-items: center;
+  
+}
+
+.message-bubble.user {
+  align-self: flex-end;
+  background: #4a69bd;
+  color: #fff;
+  border-bottom-right-radius: 0;
+}
+
+.message-bubble.bot {
+  align-self: flex-start;
+  background: #78e08f;
+  color: #1e272e;
+  border-bottom-left-radius: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.message-bubble img {
+  max-width: 100%;
+  border-radius: 8px;
+}

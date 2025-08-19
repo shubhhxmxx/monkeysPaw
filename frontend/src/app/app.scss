@@ -1,0 +1,44 @@
+/* filepath: /c:/Users/Shubham Semwal/git/monkeyspaw/monkeyspaw/src/app/app.scss */
+$app-background-color: #1A1A1A;
+$app-highlight-color: #D4AF37;
+$app-font-family: 'Georgia', serif;
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh; /* Ensure it takes up the full viewport height */
+  background-color: $app-background-color;
+  color: $app-highlight-color;
+  font-family: $app-font-family;
+  text-align: center;
+  overflow: hidden; /* Prevent external scrolling */
+  padding: 2rem 0;
+}
+
+
+.game-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px $app-highlight-color, 0 0 20px $app-highlight-color;
+  margin-bottom: 2rem;
+}
+
+.app-chat {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for chat area */
+  border: 1px solid $app-highlight-color; /* Gold border for elegance */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+}
+html, body {
+  height: 100%;
+  margin: 0
+  ;
+  background-color: #0d0d0d; /* same dark background */
+  color: white;
+}
+

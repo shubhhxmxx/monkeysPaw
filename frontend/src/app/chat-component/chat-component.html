@@ -1,0 +1,30 @@
+<div class="chat-container">
+  <!-- Wishes Remaining Counter -->
+  <div class="wishes-counter">
+    Wishes Remaining: {{ wishesRemaining }}
+  </div>
+
+  <!-- Chat Messages -->
+  <div class="chat-messages" #messagesContainer>
+    <app-message-bubble
+      *ngFor="let message of messages"
+      [message]="message.text"
+      [sender]="message.sender">
+    </app-message-bubble>
+  </div>
+
+  <!-- Wish Input -->
+  <app-wish-input
+    *ngIf="!gameOver"
+    (curseReceived)="handleCurse($event)">
+    >
+  </app-wish-input>
+
+  <!-- Reset Button -->
+  <button
+    *ngIf="gameOver"
+    class="reset-button"
+    (click)="resetGame()">
+    Reset Game
+  </button>
+</div>
