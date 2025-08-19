@@ -1,17 +1,4 @@
-# Build a FastAPI backend for a Monkey’s Paw wishes game.
-# Requirements:
-# - Use FastAPI and Pydantic
-# - Create a Wish model with fields: id (int), text (str), consequence (str), timestamp (datetime)
-# - Maintain an in-memory list of wishes (no database needed for now)
-# - API Endpoints:
-#   1. POST /wishes -> Add a new wish (accept "text" as input, auto-generate consequence string)
-#      * If there are already 3 wishes, return an HTTP 400 error with message: "You have reached the maximum of 3 wishes."
-#   2. GET /wishes -> Return all current wishes
-#   3. DELETE /wishes/{wish_id} -> Delete a wish by ID
-# - Consequence should be a simple string like: "Your wish '<text>' is granted... but with a twist."
-# - Increment wish IDs automatically
-# - Store timestamp for each wish
-# - Keep the code clean and ready for Angular frontend integration
+
 
 from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
