@@ -23,9 +23,11 @@ export class ChatService {
   }
 
   reset() {
+    this.api.reset();
     this.messagesSubject.next([
       { text: 'Welcome to The Monkey’s Paw!', sender: 'paw' },
       { text: 'What is your first wish?', sender: 'paw' }
     ]);
+
   }
 }
