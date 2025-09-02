@@ -28,7 +28,9 @@
             ],
             "styles": [
               "src/styles.scss"
-            ]
+            ],
+            "outputPath": "dist/monkeyspaw",
+            "index": "src/index.html"
           },
           "configurations": {
             "production": {
