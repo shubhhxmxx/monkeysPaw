@@ -1,4 +1,4 @@
 export const environment = {
-  production: false,
-  apiBase: 'http://localhost:8000'
+  production: true,
+  apiBase: 'https://monkeyspaw-4feh.onrender.com'
 };
