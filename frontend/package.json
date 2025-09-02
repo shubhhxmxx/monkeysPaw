@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@angular/build": "^20.1.6",
-    "@angular/cli": "^20.1.6",
+    "@angular/cli": "^17 || ^18 || ^19",
     "@angular/compiler-cli": "^20.1.0",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.8.0",
